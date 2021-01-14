@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
+		<i class="burguerMenu" id="burguer"><img src="imagenes/menu.png" width="40", height="40"></i>
 
 		<header class="header"> 
 			<figure class="logo">
@@ -52,7 +53,7 @@
 				Que tal! Soy <strong>Cristian Reyes</strong><br> Programador Backend <br> Autodidacta
 			</h1>
 		</section>
-		<div><h1>PROYECTOS RECIENTES</h1></div>
+		<div class="recientes"><h1>PROYECTOS RECIENTES</h1></div>
 
 
 		<!-- JAVA -->
@@ -176,12 +177,12 @@
 		<section id="HTMLCSSPortafolio" class="HTMLCSSPortafolio"> 
 			<article class="portafolioResponsive">
 				<figure class="contenedorImagenPortafolioResponsive">
-					<img class="imagenPortafolioResponsive" src="https://zazsupercentro.com/wp-content/uploads/2017/07/imagen-no-disponible.png" width="500", height="300">
+					<img class="imagenPortafolioResponsive" src="imagenes/responsive.png" width="500", height="300">
 				</figure>				
 				<div class="detallesPortafolioResponsive">
 					<h3 class="tituloPortafolioResponsive"> Portafolio Responsive </h3>
 					<h5 class="descripcionPortafolioResponsive">
-						Portafolio usando Responsive Design. <br> (IN PROGRESS)
+						Portafolio usando Responsive Design. <br> (VERSION 1.0)
 					</h5>
 					<p class="fechaPortafolioResponsive"><small><strong>Fecha:</strong> Enero 2021</small></p>
 				</div>
@@ -192,11 +193,11 @@
 		<section class="info">
 			<div><h2 id="acerca">ACERCA DE</h2></div>
 				<h3>
-				Enfocado principalmente en el backend, interesado en la ciencia y análisis de metadatos.
-				
-				Soy programador desde el 2014 desarrollando proyectos freelance.
-
-				Con los proyectos, pequeños scripts & sabiendo que ser Jr. o Sr es relativo, dejo que el mundo vea un poco de lo que soy capaz de realizar, siempre con ganas de un reto para incrementar mis habilidades y dejar el mundo mejor de cómo lo encuentro.
+				Centrado principalmente en el desarrollo de backend.
+				Interesado en la ciencia de los metadatos.
+				Soy programador desde 2014 desarrollando proyectos freelance.
+				Sabiendo que ser desarrollador Jr o Sr es relativo, dejo ver un poco de lo que soy capaz, con proyectos y scripts.
+				Siempre queriendo un desafío para aumentar mis habilidades y dejar el mundo mejor de lo que lo encuentro.
 				</h3>
 		</section>
 
@@ -220,6 +221,23 @@
 				<p>Created by <a href="https://twitter.com/CristianReyz" target="_blank">@CristianReyz</a></p>
 			</div>
 		</footer>
+		<script>
+			const menu = document.querySelector('.menu');
+			const burguer = document.querySelector('#burguer');
+
+			burguer.addEventListener('click', activo);
+
+			function activo(){
+
+				if(menu.classList.contains('is-active')){
+					menu.classList.remove('is-active');
+				}else{
+					menu.classList.add('is-active');
+				}
+			}
+		</script>
 	</body>
 
 </html>
+
+

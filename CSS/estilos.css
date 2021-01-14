@@ -31,6 +31,8 @@ figure:hover{
 	background-position-x: right;
 	margin: 5px 0 5px 0;
 	display: flex;
+	text-shadow: 1px 2px 2px #000;
+	filter: opacity(80%) blur(1px);
 }
 
 .principal h1 strong{
@@ -127,5 +129,19 @@ article figure{
 
 footer{
 	text-align: right;
+}
+
+.burguerMenu{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,.8);
+	display: none;
+	line-height: 40px;
+	text-align: center;
+	position: fixed;
+	z-index: 4;
+	left: 5px;
+	top: 5px;
 }
 
